@@ -29,6 +29,5 @@ define('OFFLINE_STATUS', FALSE);
 define("FEEDBACK_ROLES",'8,1,2');
 define("DIAGNOSTIC_LANG",'hi,en,ma');
 define("DEFAULT_LANGUAGE",'9');
-define("Vikas",1);
 define("DOWNLOAD_CHART_URL","http://13.127.82.199:7801/");
 
