@@ -23,5 +23,5 @@ date_default_timezone_set("Asia/Kolkata"); // Default timezone
 define('OFFLINE_STATUS', FALSE); // Status to manage application is using online or offline
 define("DIAGNOSTIC_LANG",'hi,en,ma'); // Diagnostic can be created in these languages (hi=hindi,en=english,ma=marathi)
 define("DEFAULT_LANGUAGE",'9'); // Default lanuage is 9 (9=English)
-define("DOWNLOAD_CHART_URL","https://www.highcharts.com/"); // Please set your Highchart url
+define("DOWNLOAD_CHART_URL","https://www.highcharts.com/"); //Please set your Highchart url
 
