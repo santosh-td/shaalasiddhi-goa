@@ -1133,17 +1133,17 @@ function sendEmail($fromEmail,$fromName,$toEmail,$toName,$ccEmail,$ccName,$subje
                                 "Port"=>"465",
                                 "SMTPAuth"=>true,
                                 "SMTPSecure"=>"ssl",
-                                "Username"=>"developer@tatrasdata.com",
-                                "Password"=>"tatrasdata"
+                                "Username"=>"",
+                                "Password"=>""
                             ),
                             
                             "adhyayan"=>array(
-                                "host"=>"gator3172.hostgator.com",
-                                "Port"=>"465",
+                                "host"=>"",
+                                "Port"=>"",
                                 "SMTPAuth"=>true,
                                 "SMTPSecure"=>"ssl",
-                                "Username"=>"info@adhyayan.asia",
-                                "Password"=>"!qaz@wsx1234"
+                                "Username"=>"",
+                                "Password"=>""
                             )
                         );
                         
@@ -1167,9 +1167,8 @@ function sendEmail($fromEmail,$fromName,$toEmail,$toName,$ccEmail,$ccName,$subje
 			//echo STAGING_ENVIRONMENT;
                         if(STAGING_ENVIRONMENT==true){
                             
-                            $ccEmail = 'deepakchauhan89@gmail.com,pratibha@tatrasdata.com';
-                           // $ccEmail = 'deepakchauhan89@gmail.com,pooja.s@tatrasdata.com,vikas@tatrasdata.com,upma@tatrasdata.com';
-                            $toEmail = 'deepak.t@tatrasdata.com';
+                            $ccEmail = '';
+			    $toEmail = '';
                         }
                         $allCC = explode(",", $ccEmail);
                        // print_r($allCC);die;
@@ -1183,15 +1182,8 @@ function sendEmail($fromEmail,$fromName,$toEmail,$toName,$ccEmail,$ccName,$subje
 			$mail->addReplyTo ( $fromEmail, $fromName );			
 			// Set who the message is to be sent to			
 			$mail->addAddress ( $toEmail, $toName );
-                        //$mail->addAddress ( 'nisha@tatrasdata.com', $toName );
-
-			//$ccEmail!=''?$mail->AddCC($ccEmail,$fromName):'';
-                        
                         if(DEVELOPMENT_ENVIRONMENT==true){
-			//$ccEmail!=''?$mail->AddCC($ccEmail,$fromName):'';
-                        //$mail->AddBCC ( "upma@tatrasdata.com", $toName );    
-			//$mail->AddBCC ( "vikas@tatrasdata.com", $toName );
-                       // $mail->AddBCC ( "pooja.s@tatrasdata.com", $toName );
+			
                         }
                         
 			// Set the subject line			
